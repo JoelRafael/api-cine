@@ -9,6 +9,8 @@ namespace ApiCine.Controllers
     public class AdministracionController : ControllerBase
     {
         // practicar API
+
+        // comentario
         private readonly appcontext _ctx;
         public AdministracionController(appcontext ctx)
         {
