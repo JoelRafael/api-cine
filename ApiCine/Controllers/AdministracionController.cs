@@ -27,6 +27,7 @@ namespace ApiCine.Controllers
         [Route("PostActores")]
         public async Task<IActionResult> PostActores(Actor Json)
         {
+            //this other test
             //this is a test
             _ctx.Actores.Add(Json);
             var Save = await _ctx.SaveChangesAsync();
@@ -40,6 +41,7 @@ namespace ApiCine.Controllers
         [Route("PostPeliculas")]
         public async Task<IActionResult> PostPeliculas(Pelicula Json)
         {
+            //this other test
             //this is a test
             _ctx.Peliculas.Add(Json);
             var Save = await _ctx.SaveChangesAsync();
@@ -53,6 +55,7 @@ namespace ApiCine.Controllers
         [Route("GetPeliculas")]
         public async Task<IActionResult> GetPeliculas()
         {
+            //this other test
             //this is a test
             var Peliculas = await _ctx.Peliculas.Include(x => x.Actors).ToListAsync();
             return Ok(new { Error = false, Message = "", Data = Peliculas });
