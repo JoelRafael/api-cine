@@ -8,7 +8,7 @@ namespace ApiCine.Controllers
    [Route("[controller]")]
     public class AdministracionController : ControllerBase
     {
-
+        // practicar API
         private readonly appcontext _ctx;
         public AdministracionController(appcontext ctx)
         {
